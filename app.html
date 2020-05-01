@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Shopping Card</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td>Id</td>
+                <td>Product Name</td>
+                <td>Category</td>
+                <td>Add to card</td>
+                <td>Decrease</td>
+                <td>Increase</td>
+                <td>Remove from card</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>TEST 1</td>
+                <td>TEST</td>
+                <td><button class="add-to-card" data-product='{"Id": 1,"Ad":"TEST 1","Kategori":"TEST"}'>Add to card</button></td>
+                <td><button class="reduce" data-id='1'>Decrease</button></td>
+                <td><button class="increase" data-id='1'>Increase</button></td>
+                <td><button class="remove-from-card" data-id='1'>Remove</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>TEST 2</td>
+                <td>TEST</td>
+                <td><button class="add-to-card" data-product='{"Id": 2,"Ad":"TEST 2","Kategori":"TEST"}'>Add to card</button></td>
+                <td><button class="increase" data-id='2'>Increase</button></td>
+                <td><button class="reduce" data-id='2'>Decrease</button></td>
+                <td> <button class="remove-from-card" data-id='2'>Remove</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>TEST 3</td>
+                <td>TEST</td>
+                <td><button class="add-to-card" data-product='{"Id": 3,"Ad":"TEST 1","Kategori":"TEST"}'>Add to card</button></td>
+                <td><button class="increase" data-id='3'>Increase</button></td>
+                <td><button class="reduce" data-id='3'>Decrease</button></td>
+                <td><button class="remove-from-card" data-id='3'>Remove</button></td>
+            </tr>
+        </table>
+
+        <script src="card.js"></script>
+        <script src="order.js"></script>
+    </body>
+</html>
