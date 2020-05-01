@@ -74,9 +74,7 @@ function addToCard(item) {
 }
 
 function removeFromCard(id) {
-    console.log(id);
     let index = isAnyWithId(id);
-    console.log(index);
     if (index != -1) {
         shoppingCard.splice(index, 1);
         updateCard();
