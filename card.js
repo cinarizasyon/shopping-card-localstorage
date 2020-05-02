@@ -1,5 +1,5 @@
 var shoppingCard = null;
-var shoppingCardName = "gozcuCard";
+var shoppingCardName = "shoppingCard";
 
 function initCard() {
     if (localStorage == undefined)
@@ -35,9 +35,9 @@ function increasePiece(id, piece) {
     let index = isAnyWithId(id);
     if (index != -1) {
         if (piece == undefined)
-            shoppingCard[index].Adet++;
+            shoppingCard[index].piece++;
         else
-            shoppingCard[index].Adet += piece;
+            shoppingCard[index].piece += piece;
         updateCard();
     }
 }
@@ -45,9 +45,9 @@ function increasePiece(id, piece) {
 function increasePieceWithIndex(index, piece) {
     if (index != -1) {
         if (piece == undefined)
-            shoppingCard[index].Adet++;
+            shoppingCard[index].piece++;
         else
-            shoppingCard[index].Adet += piece;
+            shoppingCard[index].piece += piece;
     }
 }
 
@@ -55,9 +55,9 @@ function reducePiece(id, piece) {
     let index = isAnyWithId(id);
     if (index != -1) {
         if (piece == undefined)
-            shoppingCard[index].Adet--;
+            shoppingCard[index].piece--;
         else
-            shoppingCard[index].Adet -= piece;
+            shoppingCard[index].piece -= piece;
         updateCard();
     }
 }
@@ -65,9 +65,9 @@ function reducePiece(id, piece) {
 function addToCard(item) {
     let index = isAny(item);
     if (index != -1)
-        increasePieceWithIndex(index, item.Adet);
+        increasePieceWithIndex(index, item.piece);
     else {
-        item.Adet = 1;
+        item.piece = 1;
         shoppingCard.push(item);
     }
     updateCard();
